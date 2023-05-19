@@ -50,7 +50,7 @@
                 
                     <div class="mySlides fade" name = "slider0">
                         <div class="numbertext">2 / 3</div>
-                            <img src="https://www.icemtl.ro/wp-content/uploads/2014/05/etnografie-2013-1.jpg">
+                            <img src="https://gokid.ro/wp-content/uploads/2012/08/muzee-kid-friendly-muzeul-satului-gokid-exponate-casa-curte-1-e1556704228470.jpg">
                         <div class="text">Casa</div>
                     </div>
                 
@@ -91,6 +91,12 @@
                             <img src="https://b365.ro/wp-content/uploads/2021/03/Spatiu-de-expozitii-nou-deschis-la-Muzeul-National-al-Taranului-Roman.jpg">
                         <div class="text">Poză cu clădirea</div>
                     </div>
+
+                    <div class="mySlides fade" name = "slider1">
+                        <div class="numbertext">3 / 3</div>
+                            <img src="https://zilesinopti.ro/wp-content/uploads/2021/08/a3e5f61eb3e457fe04207af566882ee5-1024x661.jpg.webp">
+                        <div class="text">Interiorul clădirii</div>
+                    </div>
                 
                 
                     <!-- Next and previous buttons -->
@@ -122,8 +128,6 @@
 
             showSlides(1, 0);  
             showSlides(1, 1);
-
-
             function plusSlides(n, slideshownumber) 
             {
             slideIndex[slideshownumber] = slideIndex[slideshownumber] + n; 
@@ -166,39 +170,6 @@
                 slides[slideIndex[slideshownumber]-1].style.display = "block";
                 dots[slideIndex[slideshownumber]-1].className += " active";
             } 
-        </script>
-
-        <div class="barajos"></div>
-
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            // Next/previous controls
-            function plusSlides(n) {
-            showSlides(slideIndex += n);
-            }
-
-            // Thumbnail image controls
-            function currentSlide(n) {
-            showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            }
 
         </script>
 
