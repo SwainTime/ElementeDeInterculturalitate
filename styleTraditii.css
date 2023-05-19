@@ -194,10 +194,9 @@ body {
   height:auto;
   border-radius: 10px;
   border: 6px solid black;
-  z-index:1;
-  top: 50px;
-  right: 9px;
-  position:fixed;  
+  top:10px;
+  margin:auto;
+  
 }
 
 #yellowBoxContinut a:visited{
